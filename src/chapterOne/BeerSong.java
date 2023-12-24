@@ -6,7 +6,7 @@ public class BeerSong {
 
     public static void main(String[] args) {
 
-        int beerNum = 2;
+        int beerNum = 10;
         String word = "bottles";
 
         while (beerNum > 0) {
