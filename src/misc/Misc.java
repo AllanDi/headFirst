@@ -1,31 +1,32 @@
 package misc;
 
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Set;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Misc {
-
-    public static int customParseInteger(String text) throws NumberFormatException, ArithmeticException {
-        try {
-            // Tenta converter a String para um inteiro
-            return Integer.parseInt(text);
-        } catch (NumberFormatException e) {
-            // Lança a exceção para cima na pilha de chamadas
-            throw new NumberFormatException("String inválida para conversão em inteiro: " + text);
-        }
-        // Note que uma ArithmeticException não é lançada por parseInt,
-        // portanto, não será capturada aqui.
-    }
-
     public static void main(String[] args) {
-        String textVal = "123";
-        int val;
-        try {
-            val = customParseInteger(textVal);
-            System.out.println(val);
-        } catch (NumberFormatException | ArithmeticException e) {
-            System.out.println("Erro ao converter String para inteiro: " + e.getMessage());
+        Scanner scanner = new Scanner(System.in);
+        int tentativas = 3;
+
+        System.out.println("Bem-vindo, Mestre das Chaves. Digite o código mágico:");
+
+
+
+
+        while (tentativas > 0) {
+            try {
+                int codigoMagico = scanner.nextInt();
+                System.out.println("Muito bem isso é um numero");
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Isso não é um numero, deu ruim, estourou a excessão");
+                scanner.next();
+            }
+            tentativas = tentativas -1;
+        }
+
+        if (tentativas == 0) {
+            System.out.println("As tentativas acabaram. A chave se desintegra em faíscas mágicas.");
         }
     }
 }

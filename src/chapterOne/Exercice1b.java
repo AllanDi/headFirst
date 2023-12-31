@@ -21,6 +21,15 @@ public class Exercice1b {
             }
         }
 
+        int y = 5;
+        while (y > 1){
+            y = y - 1;
+            if (y < 3){
+                System.out.println("small y");
+            }
+        }
 
     }
+
+
 }
