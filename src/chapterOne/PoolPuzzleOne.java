@@ -1,12 +1,16 @@
 package chapterOne;
 
 public class PoolPuzzleOne {
+
+    static void impressao(String texto){
+        System.out.print(texto.toString());
+    }
     public static void main(String[] args) {
 
         int x = 0;
 
         while (x < 4) {
-            System.out.print("a");
+            impressao("a");
             if (x < 1) {
                 System.out.print(" ");
             }
