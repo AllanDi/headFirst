@@ -40,6 +40,11 @@ public class ObjectReference {
             pets[0] = new Dog("rex");
 
             System.out.println(pets[0].name);
+            pets[0].name = "fido";
+            System.out.println(pets[0].name);
+            pets[0].bark();
+
+
 
     }
 
@@ -59,6 +64,9 @@ class Dog{
 
     public Dog(String name){
         this.name = name;
+    }
+    public void bark(){
+        System.out.println("auau");
     }
 
 }
