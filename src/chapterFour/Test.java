@@ -3,14 +3,15 @@ package chapterFour;
 public class Test {
 
     static int x = 7;
-    void go(int z){
+    static void go(int z){
+
+        System.out.println( "Static method");
 
     }
 
     public static void main(String[] args) {
-        Test test = new Test();
 
-        test.go(x);
+        go(x);
     }
 
 
