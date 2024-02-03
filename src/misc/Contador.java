@@ -21,6 +21,7 @@ public class Contador {
             for (int i = 0; i<1000; i++){
                 contador.incrementar();
             }
+
         });
 
         //Thread 2
@@ -29,6 +30,7 @@ public class Contador {
             for (int i = 0; i<1000; i++){
                 contador.incrementar();
             }
+
         });
 
         t1.start();
@@ -39,12 +41,5 @@ public class Contador {
 
         System.out.println("Valor final do contador " + contador.getContagem());
 
-
-
-
-
     }
-
-
-
 }
