@@ -3,10 +3,12 @@ package chapterFour;
 public class GoodDog {
 
     private int size;
+    String name;
 
     public int getSize() {
         return size;
     }
+    public String getName(){ return name;}
 
     public void setSize(int size){
         this.size = size;
@@ -48,11 +50,17 @@ class GoodDogTestDrive{
         pets = new GoodDog[7];
 
         pets[0] = new GoodDog();
+        pets[1] = new GoodDog();
 
         pets[0].setSize(10);
 
         pets[0].bark();
         pets[1].bark();
+
+        GoodDog test = new GoodDog();
+
+        System.out.println(test.getSize());
+        System.out.println(test.getName());
 
 
 
