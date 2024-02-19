@@ -19,6 +19,13 @@ public class SimpleDotComGame {
                 caso contrario o palpite esta incorreto, retorne errado
 
             fim da iteracao
+            fim do metodo
+
+
+            -->metodo void setLocationCells(int[] cellLocations)
+            caputure os locais das celulas como um parametro de matriz de int
+            atribua o parametro dos locais das celulas a variavel das celulas a variavel de instancia desses locais
+                fim do metodo
 
 
 
